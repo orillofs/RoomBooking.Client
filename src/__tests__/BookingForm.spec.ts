@@ -11,8 +11,8 @@ describe('BookingForm', () => {
 
     // The room's name is the room data surfaced on the form.
     expect(wrapper.get('.room-name').text()).toContain('Deluxe Room')
-    expect(wrapper.get('[data-test="start-date"]').exists()).toBe(true)
-    expect(wrapper.get('[data-test="end-date"]').exists()).toBe(true)
-    expect(wrapper.get('[data-test="book"]').exists()).toBe(true)
+    expect(wrapper.find('[data-test="start-date"]').exists()).toBe(true)
+    expect(wrapper.find('[data-test="end-date"]').exists()).toBe(true)
+    expect(wrapper.find('[data-test="book"]').exists()).toBe(true)
   })
 })
